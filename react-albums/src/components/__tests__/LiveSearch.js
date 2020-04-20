@@ -28,6 +28,7 @@ describe('LiveSearch', () => {
     const element = await waitFor(() => getByText('Vanity Plus Mind'));
 
     expect(element).toBeVisible();
+    // expect(element).toBeInDocumet()
 
   });
 });
