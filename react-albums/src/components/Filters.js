@@ -1,7 +1,10 @@
 import React from "react";
 
 export default function Filters(props) {
-  const filterItems = Object.keys(props.filters).map(filter => (
+
+  const filters = props.filters || {};
+
+  const filterItems = Object.keys(filters).map(filter => (
     <div key={filter} className="filters__form-group">
       <input
         className="filters__checkbox"
